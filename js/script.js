@@ -2,9 +2,16 @@ $(window).on("load", function() {
   "use strict";
 
   ScrollReveal().reveal(".about-us", {
-    duration: 500,
-    delay: 500,
-    reset: true
+    duration: 1000,
+    delay: 200,
+    reset: true,
+    distance: "200px"
+  });
+  ScrollReveal().reveal(".clients", {
+    duration: 1000,
+    delay: 200,
+    reset: true,
+    distance: "200px"
   });
   // ============== Sticky Header Function ============
 
