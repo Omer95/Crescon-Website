@@ -3342,6 +3342,8 @@ main.lght .ep-icon:after {
 	float: left;
 	width: 100%;
 	margin-bottom: 100px;
+	margin-top: 1em;
+	margin-bottom: 5em;
 }
 .footer-logoo img {
 	max-width: 100%;
@@ -3356,6 +3358,7 @@ main.lght .ep-icon:after {
 	margin-bottom: 60px;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 2em;
 }
 .footer-links li {
 	display: inline-block;
@@ -3379,6 +3382,7 @@ main.lght .ep-icon:after {
 	margin-bottom: 50px;
 	padding-left: 0;
 	list-style: none;
+	margin-bottom: 1em;
 }
 .addrs-info li {
 	float: left;
@@ -3418,6 +3422,7 @@ main.lght .ep-icon:after {
 	float: left;
 	width: 100%;
 	padding: 50px 0;
+	padding-top: 1em;
 }
 .cpyright-text {
 	float: left;

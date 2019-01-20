@@ -10,8 +10,7 @@ $(window).on("load", function() {
   ScrollReveal().reveal(".clients", {
     duration: 1000,
     delay: 200,
-    reset: true,
-    distance: "200px"
+    reset: true
   });
   // ============== Sticky Header Function ============
 
