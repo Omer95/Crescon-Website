@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Omer95/Crescon-Website#readme",
   "dependencies": {
-    "scrollreveal": "^4.0.5"
+    "scrollreveal": "^4.0.5",
+    "toastr": "^2.1.4"
   }
 }

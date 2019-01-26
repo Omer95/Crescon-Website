@@ -249,6 +249,7 @@ nav ul ul li,
 .feature-info h3,
 .partners-section ul li img,
 .footer-links li a,
+.footer-links2 li a,
 .follow-our ul li a,
 .choosing-que h3,
 .spec-img img,
@@ -3373,6 +3374,28 @@ main.lght .ep-icon:after {
 .footer-links li a:hover {
 	color: #ffa800;
 }
+.footer-links2 {
+	float: left;
+	width: 100%;
+	margin-bottom: 60px;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 2em;
+}
+.footer-links2 li {
+	display: inline-block;
+	padding: 0 40px;
+}
+.footer-links2 li a {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.footer-links2 li a:hover {
+	color: #3e3f42;
+}
+
 
 /* ========= addrs-info ======== */
 

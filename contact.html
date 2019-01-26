@@ -17,6 +17,15 @@
     <link rel="stylesheet" type="text/css" href="css/dark-color.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link
+      href="
+    https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
   </head>
 
   <body>
@@ -125,7 +134,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="clients">
         <div class="contact-info-sec">
           <div class="container">
             <div class="cntct-details">
@@ -146,15 +155,15 @@
                       <h3>Site Offices</h3>
                       <ul>
                         <li>
-                          <a href="#" title=""
-                            >Plot No. B-71, Hamdard Housing Society Opposite to
-                            Nadra Office Airport Road, Sukkur, Sindh Pakistan</a
-                          >
+                          <p href="#" title="">
+                            Plot No. B-71, Hamdard Housing Society Opposite to
+                            Nadra Office Airport Road, Sukkur, Sindh Pakistan
+                          </p>
                         </li>
                         <li>
-                          <a href="#" title=""
-                            >Treatment Plant-03, KW&amp;SB, Maripur</a
-                          >
+                          <p href="#" title="">
+                            Treatment Plant-03, KW&amp;SB, Maripur
+                          </p>
                         </li>
                       </ul>
                     </div>
@@ -170,7 +179,7 @@
             </div>
             <!--cntct-details end-->
             <div class="contact-form-sec">
-              <h3>Have A Question? Contact Us</h3>
+              <h3>Want to work with us? Get in touch</h3>
               <p
                 class="success alert alert-success"
                 id="success"
@@ -181,10 +190,15 @@
                 id="error"
                 style="display:none;"
               ></p>
-              <form name="contact_form_3" id="contact_form_3" method="post">
+              <form
+                class="clients"
+                name="contact_form_3"
+                id="contact_form_3"
+                method="post"
+              >
                 <input type="hidden" name="axn" value="contact_3" />
                 <div class="row">
-                  <div class="col-lg-4">
+                  <div class="col-lg-3">
                     <input
                       type="text"
                       name="username"
@@ -192,7 +206,7 @@
                       placeholder="Name*"
                     />
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-3">
                     <input
                       type="text"
                       name="email"
@@ -200,11 +214,20 @@
                       placeholder="Email*"
                     />
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-3">
                     <input
                       type="text"
-                      name="subject"
-                      placeholder="Subject(Optional)"
+                      name="phone"
+                      id="phone"
+                      placeholder="Contact Number*"
+                    />
+                  </div>
+                  <div class="col-lg-3">
+                    <input
+                      type="text"
+                      name="position"
+                      id="position"
+                      placeholder="Position want to apply for"
                     />
                   </div>
                   <div class="col-lg-12">
@@ -229,32 +252,75 @@
       <footer>
         <div class="footer-data">
           <div class="container">
-            <div class="ft-contact-info">
-              <h6>let’s work together</h6>
-              <h1>hello@kons.co</h1>
-              <h3>11 Broadway, 17th Floor . New York, NY 10004</h3>
-              <h3>(+035) 527-1710-70</h3>
+            <div class="footer-logoo">
+              <!-- <img src="images/footer-logo.png" alt=""> -->
+              <h2 style="color: white;">Crescent Construction Company</h2>
             </div>
-            <!--ft-contact-info end-->
-            <div class="social-copyright">
-              <ul>
-                <li><a href="#" title="">Twitter</a></li>
-                <li><a href="#" title="">Facebook</a></li>
-                <li><a href="#" title="">Behance</a></li>
-                <li><a href="#" title="">Dribbble</a></li>
-              </ul>
-              <div class="copyright-text">
-                <p>© 2017 Kons. All Right Reserved</p>
-              </div>
+            <!--footer-logoo end-->
+            <ul class="footer-links2">
+              <li><a href="#" title="">About Us</a></li>
+              <li><a href="#" title="">Ongoing Projects</a></li>
+              <li><a href="#" title="">Key Staff Members</a></li>
+              <li><a href="#" title="">Construction and Contracting</a></li>
+            </ul>
+            <!--footer-links end-->
+            <ul class="addrs-info">
+              <li>
+                <span style="color:#3e3f42;"
+                  ><strong
+                    >D 37/A, Miran Muhammad Shah Road, KDA Scheme 1, Karachi,
+                    75350</strong
+                  ></span
+                >
+              </li>
+              <li>
+                <span style="color:#3e3f42;"
+                  ><strong>+92 021 341 40931-3</strong></span
+                >
+              </li>
+              <li>
+                <span style="color:#3e3f42;"
+                  ><strong>info@crescongroup.com</strong></span
+                >
+              </li>
+            </ul>
+            <ul class="footer-social-links" style="margin-bottom:2em;">
+              <li>
+                <a href="#" title=""><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fa fa-google-plus"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fa fa-rss"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fa fa-dribbble"></i></a>
+              </li>
+            </ul>
+            <div>
+              <p style="text-align: center; color: #3e3f42">
+                © 2019 Crescent Construction Company. <span>Design</span> by
+                <a
+                  style="color: #3e3f42 !important;"
+                  href="https://www.linkedin.com/in/omer-farooq-ahmed-93bb18a4/"
+                  >Omer Farooq Ahmed</a
+                >
+              </p>
             </div>
-            <!--social-copyright end-->
           </div>
         </div>
         <!--footer-data end-->
       </footer>
     </div>
     <!--wrapper end-->
-
+    <script src="node_modules/toastr/toastr.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
