@@ -61,24 +61,24 @@ function initialize() {
   var contentString =
     '<div class="map-info">' +
     '<div class="map-title">' +
-    '<div class="brand" href="#"><div class="brand-info"><div class="brand-name">KONS</div><div class="brand-text">architecture</div></div></div></div>' +
+    '<div class="brand" href="#"><div class="brand-info"><div class="brand-name">Crescent Construction Company</div><div class="brand-text">Location</div></div></div></div>' +
     '<p class="map-address">' +
     '<div class="map-address-row">' +
     '  <i class="fa fa-map-marker"></i>' +
-    '  <span class="text"><strong>Melbourne, VIC 3000, Australia.</strong><br>' +
-    "  Collins Street</span>" +
+    '  <span class="text"><strong>D-37/A, Miran M. Shah Road, KDA Scheme-1, Karachi.</strong><br>' +
+    "  </span>" +
     "</div>" +
     '<div class="map-address-row">' +
     '   <i class="fa fa-phone"></i>' +
-    '   <span class="text">(+01) 231-394-0713</span>' +
+    '   <span class="text">021-34140931-3</span>' +
     "</div>" +
     '<div class="map-address-row">' +
     '   <span class="map-email">' +
     '      <i class="fa fa-envelope"></i>' +
-    '      <span class="text">incognitotheme@gmail.com</span>' +
+    '      <span class="text">info@crescongroup.com</span>' +
     "   </span>" +
     "</div>" +
-    '<p class="gmap-open"><a href="https://www.google.com/maps/@-37.824812,144.965981,14z?hl=ru-RU" target="_blank">Open on Google Maps</a></p></div>';
+    '<p class="gmap-open"><a href="https://www.google.com/maps/place/Crescent+Construction/@24.8160123,67.0110152,12z/data=!4m8!1m2!2m1!1sCrescent+Construction,+Karachi!3m4!1s0x3eb33f570ae25c0b:0x997e800a419f7dfe!8m2!3d24.8785568!4d67.0886297" target="_blank">Open on Google Maps</a></p></div>';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
@@ -86,27 +86,28 @@ function initialize() {
 
   // Uncomment down to show Marker
 
-  /*marker = new google.maps.Marker({
-        map: map,
-        draggable: true,
-        title: 'KONS', //change title here
-        animation: google.maps.Animation.DROP,
-        position: mapLocation
-    });*/
+  marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    title: "Crescent Construction Company", //change title here
+    animation: google.maps.Animation.DROP,
+    position: mapLocation,
+    icon: "images/map_marker.png"
+  });
 
   // Uncomment down to show info window on marker
 
-  /*google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-    });*/
-
-  var image = "";
-  var myLatLng = new google.maps.LatLng(43.50157, 20.1276913);
-  var beachMarker = new google.maps.Marker({
-    position: mapLocation,
-    map: map,
-    icon: "images/map_marker.png"
+  google.maps.event.addListener(marker, "click", function() {
+    infowindow.open(map, marker);
   });
+
+  // var image = "";
+  // var myLatLng = new google.maps.LatLng(43.50157, 20.1276913);
+  // var beachMarker = new google.maps.Marker({
+  //   position: mapLocation,
+  //   map: map,
+  //   icon: "images/map_marker.png"
+  // });
 }
 
 if ($("#map").length) {
