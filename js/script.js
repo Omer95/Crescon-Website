@@ -17,9 +17,9 @@ $(window).on("load", function() {
   $(window).on("scroll", function() {
     var header_height = $("header").innerHeight();
     if ($(this).scrollTop() > 1) {
-      $("header.stick").addClass("sticky animated slideInDown");
+      $("header.stick").addClass("sticky");
     } else {
-      $("header.stick").removeClass("sticky animated slideInDown");
+      $("header.stick").removeClass("sticky");
     }
   });
 
